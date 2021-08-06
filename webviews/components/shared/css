@@ -1,0 +1,462 @@
+
+      * :global(.material-icons){
+        width: 24px;
+        height: 24px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 50%;
+        right:5%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+   
+image : done 
+container : done 
+
+    
+ 
+
+  
+   var Mat_Colors = {
+        red : {
+            '#F44336'   : "red",
+            lighten : {
+                '#FFEBEE'   : "lighten-5",
+                '#FFCDD2'   : "lighten-4",
+                '#EF9A9A'   : "lighten-3",
+                '#E57373'   : "lighten-2",
+                '#EF5350'   : "lighren-1",
+            },
+            darken : {
+                '#E53935'   : "darken-1",
+                '#D32F2F'   : "darken-2",
+                '#C62828'   : "darken-3",
+                '#B71C1C'   : "darken-4",
+            },
+            accent : {
+                '#FF8A80'   : "accent-1",
+                '#FF5252'   : "accent-2",
+                '#FF1744'   : "accent-3",
+                '#D50000'   : "accent-4",
+            }
+        },
+        pink : {
+            '#E91E63' : "pink",
+            lighten : {
+                '#FCE4EC'   : "lighten-5",
+                '#F8BBD0'   : "lighten-4",
+                '#F48FB1'   : "lighten-3",
+                '#F06292'   : "lighten-2",
+                '#EC407A'   : "lighten-1",
+            },
+            darken : {
+                '#D81B60'   : "darken-1",
+                '#C2185B'   : "darken-2",
+                '#AD1457'   : "darken-3",
+                '#880E4F'   : "darken-4",
+            },
+            accent : {
+                '#FF80AB'   : "accent-1",
+                '#FF4081'   : "accent-2",
+                '#F50057'   : "accent-3",
+                '#C51162'   : "accent-4",
+            }
+        },
+        purple : {
+            '#9C27B0'   : "purple",
+            lighten : {
+                '#F3E5F5'   : "lighten-5",
+                '#E1BEE7'   : "lighten-4",
+                '#CE93D8'   : "lighten-3",
+                '#BA68C8'   : "lighten-2",
+                '#AB47BC'   : "lighten-1",
+            },
+            darken : {
+                '#8E24AA'   : "darken-1",
+                '#7B1FA2'   : "darken-2",
+                '#6A1B9A'   : "darken-3",
+                '#4A148C'   : "darken-4",
+            },
+            accent : {
+                '#EA80FC'   : "accent-1",
+                '#E040FB'   : "accent-2",
+                '#D500F9'   : "accent-3",
+                '#AA00FF'   : "accent-4",
+            }
+        },
+        deep_purple : {
+            '#673AB7'   : "deep_purple",
+            lighten : {
+                '#EDE7F6'   : "lighten-5",
+                '#D1C4E9'   : "lighten-4",
+                '#B39DDB'   : "lighten-3",
+                '#9575CD'   : "lighten-2",
+                '#7E57C2'   : "lighten-1",
+            },
+            darken : {
+                '#5E35B1'   : "darken-1",
+                '#512DA8'   : "darken-2",
+                '#4527A0'   : "darken-3",
+                '#311B92'   : "darken-4",
+            },
+            accent : {
+                '#B388FF'   : "accent-1",
+                '#7C4DFF'   : "accent-2",
+                '#651FFF'   : "accent-3",
+                '#6200EA'   : "accent-4",
+            }
+        },
+        indigo : {
+            '#3F51B5'   : "indigo",
+            lighten : {
+                '#E8EAF6'   : "lighten-5",
+                '#C5CAE9'   : "lighten-4",
+                '#9FA8DA'   : "lighten-3",
+                '#7986CB'   : "lighten-2",
+                '#5C6BC0'   : "lighten-1",
+            },
+            darken : {
+                '#3949AB'   : "darken-1",
+                '#303F9F'   : "darken-2",
+                '#283593'   : "darken-3",
+                '#1A237E'   : "darken-4",
+            },
+            accent : {
+                '#8C9EFF'   : "accent-1",
+                '#536DFE'   : "accent-2",
+                '#3D5AFE'   : "accent-3",
+                '#304FFE'   : "accent-4",
+            }
+        },
+        blue : {
+            '#2196F3'   : "blue",
+            lighten : {
+                '#E3F2FD'   : "lighten-5",
+                '#BBDEFB'   : "lighten-4",
+                '#90CAF9'   : "lighten-3",
+                '#64B5F6'   : "lighten-2",
+                '#42A5F5'   : "lighten-1",
+            },
+            darken : {
+                '#1E88E5'   : "darken-1",
+                '#1976D2'   : "darken-2",
+                '#1565C0'   : "darken-3",
+                '#0D47A1'   : "darken-4",
+            },
+            accent : {
+                '#82B1FF'   : "accent-1",
+                '#448AFF'   : "accent-2",
+                '#2979FF'   : "accent-3",
+                '#2962FF'   : "accent-4",
+            }
+        },
+        light_blue : {
+            '#03A9F4'   : "light_blue",
+            lighten : {
+                '#E1F5FE'   : "lighten-5",
+                '#B3E5FC'   : "lighten-4",
+                '#81D4FA'   : "lighten-3",
+                '#4FC3F7'   : "lighten-2",
+                '#29B6F6'   : "lighten-1",
+            },
+            darken : {
+                '#039BE5'   : "darken-1",
+                '#0288D1'   : "darken-2",
+                '#0277BD'   : "darken-3",
+                '#01579B'   : "darken-4",
+            },
+            accent : {
+                '#80D8FF'   : "accent-1",
+                '#40C4FF'   : "accent-2",
+                '#00B0FF'   : "accent-3",
+                '#0091EA'   : "accent-4",
+            }
+        },
+        cyan : {
+            '#00BCD4'   : "cyan",
+            lighten : {
+                '#E0F7FA'   : "lighten-5",
+                '#B2EBF2'   : "lighten-4",
+                '#80DEEA'   : "lighten-3",
+                '#4DD0E1'   : "lighten-2",
+                '#26C6DA'   : "lighten-1",
+            },
+            darken : {
+                '#00ACC1'   : "darken-1",
+                '#0097A7'   : "darken-2",
+                '#00838F'   : "darken-3",
+                '#006064'   : "darken-4",
+            },
+            accent : {
+                '#84FFFF'   : "accent-1",
+                '#18FFFF'   : "accent-2",
+                '#00E5FF'   : "accent-3",
+                '#00B8D4'   : "accent-4",
+            }
+        },
+        teal : {
+            '#009688'   : "teal",
+            lighten : {
+                '#E0F2F1'   : "lighten-5",
+                '#B2DFDB'   : "lighten-4",
+                '#80CBC4'   : "lighten-3",
+                '#4DB6AC'   : "lighten-2",
+                '#26A69A'   : "lighten-1",
+            },
+            darken : {
+                '#00897B'   : "darken-1",
+                '#00796B'   : "darken-2",
+                '#00695C'   : "darken-3",
+                '#004D40'   : "darken-4",
+            },
+            accent : {
+                '#A7FFEB'   : "accent-1",
+                '#64FFDA'   : "accent-2",
+                '#1DE9B6'   : "accent-3",
+                '#00BFA5'   : "accent-4",
+            }
+        },
+        green : {
+            '#4CAF50'   : "green",
+            lighten : {
+                '#E8F5E9'   : "lighten-5",
+                '#C8E6C9'   : "lighten-4",
+                '#A5D6A7'   : "lighten-3",
+                '#81C784'   : "lighten-2",
+                '#66BB6A'   : "lighten-1",
+            },
+            darken : {
+                '#43A047'   : "darken-1",
+                '#388E3C'   : "darken-2",
+                '#2E7D32'   : "darken-3",
+                '#1B5E20'   : "darken-4",
+            },
+            accent : {
+                '#B9F6CA'   : "accent-1",
+                '#69F0AE'   : "accent-2",
+                '#00E676'   : "accent-3",
+                '#00C853'   : "accent-4",
+            }
+        },
+        light_green : {
+            '#8BC34A'   : "light_green",
+            lighten : {
+                '#F1F8E9'   : "lighten-5",
+                '#DCEDC8'   : "lighten-4",
+                '#C5E1A5'   : "lighten-3",
+                '#AED581'   : "lighten-2",
+                '#9CCC65'   : "lighten-1",
+            },
+            darken : {
+                '#7CB342'   : "darken-1",
+                '#689F38'   : "darken-2",
+                '#558B2F'   : "darken-3",
+                '#33691E'   : "darken-4",
+            },
+            accent : {
+                '#CCFF90'   : "accent-1",
+                '#B2FF59'   : "accent-2",
+                '#76FF03'   : "accent-3",
+                '#64DD17'   : "accent-4",
+            }
+        },
+        lime : {
+            '#CDDC39'   : "lime",
+            lighten : {
+                '#F9FBE7'   : "lighten-5",
+                '#F0F4C3'   : "lighten-4",
+                '#E6EE9C'   : "lighten-3",
+                '#DCE775'   : "lighten-2",
+                '#D4E157'   : "lighten-1",
+            },
+            darken : {
+                '#C0CA33'   : "darken-1",
+                '#AFB42B'   : "darken-2",
+                '#9E9D24'   : "darken-3",
+                '#827717'   : "darken-4",
+            },
+            accent : {
+                '#F4FF81'   : "accent-1",
+                '#EEFF41'   : "accent-2",
+                '#C6FF00'   : "accent-3",
+                '#AEEA00'   : "accent-4",
+            }
+        },
+        yellow : {
+            '#FFEB3B'   : "yellow",
+            lighten : {
+                '#FFFDE7'   : "lighten-5",
+                '#FFF9C4'   : "lighten-4",
+                '#FFF59D'   : "lighten-3",
+                '#FFF176'   : "lighten-2",
+                '#FFEE58'   : "lighten-1",
+            },
+            darken : {
+                '#FDD835'   : "darken-1",
+                '#FBC02D'   : "darken-2",
+                '#F9A825'   : "darken-3",
+                '#F57F17'   : "darken-4",
+            },
+            accent : {
+                '#FFFF8D'   : "accent-1",
+                '#FFFF00'   : "accent-2",
+                '#FFEA00'   : "accent-3",
+                '#FFD600'   : "accent-4",
+            }
+        },
+        amber : {
+            '#ffc107'   : "amber",
+            lighten : {
+                '#fff8e1'   :   'lighten-5',
+                '#ffecb3'   :   "lighten-4",
+                '#ffe082'   :   "lighten-3",
+                '#ffd54f'   :   "lighten-2",
+                '#ffca28'   :   'lighten-1',
+            },
+            darken : {
+                '#ffb300'   :   "darken-1",
+                '#ffa000'   :   "darken-2",
+                '#ff8f00'   :   "darken-3",
+                '#ff6f00'   :   "darken-4",
+            },
+            accent : {
+                '#ffe57f'   :   "accent-1",
+                '#ffd740'   :   "accent-2",
+                '#ffc400'   :   "accent-3",
+                '#ffab00'   :   "accent-4",
+            }
+        },
+        orange : {
+            '#FF9800' : "orange",
+            lighten : {
+                '#FFF3E0'   : "lighten-5",
+                '#FFE0B2'   : "lighten-4",
+                '#FFCC80'   : "lighten-3",
+                '#FFB74D'   : "lighten-2",
+                '#FFA726'   : "lighten-1",
+            },
+            darken : {
+                '#FB8C00'   : "darken-1",
+                '#F57C00'   : "darken-2",
+                '#EF6C00'   : "darken-3",
+                '#E65100'   : "darken-4",
+            },
+            accent : {
+                '#FFD180'   : "accent-1",
+                '#FFAB40'   : "accent-2",
+                '#FF9100'   : "accent-3",
+                '#FF6D00'   : "accent-4",
+            }
+        },
+        deep_orange : {
+            '#FF5722'   : "deep_orange",
+            lighten : {
+                '#FBE9E7'   : "lighten-5",
+                '#FFCCBC'   : "lighten-4",
+                '#FFAB91'   : "lighten-3",
+                '#FF8A65'   : "lighten-2",
+                '#FF7043'   : "lighten-1",
+            },
+            darken : {
+                '#F4511E'   : "darken-1",
+                '#E64A19'   : "darken-2",
+                '#D84315'   : "darken-3",
+                '#BF360C'   : "darken-4",
+            },
+            accent : {
+                '#FF9E80'   : "accent-1",
+                '#FF6E40'   : "accent-2",
+                '#FF3D00'   : "accent-3",
+                '#DD2C00'   : "accent-4",
+            }
+        },
+        brown : {
+            '#795548'   : "brown",
+            lighten : {
+                '#EFEBE9'   : "lighten-5",
+                '#D7CCC8'   : "lighten-4",
+                '#BCAAA4'   : "lighten-3",
+                '#A1887F'   : "lighten-2",
+                '#8D6E63'   : "lighten-1",
+            },
+            darken : {
+                '#6D4C41'   : "darken-1",
+                '#5D4037'   : "darken-2",
+                '#4E342E'   : "darken-3",
+                '#3E2723'   : "darken-4",
+            }
+        },
+        grey : {
+            '#9E9E9E'   : "grey",
+            '#000000'   : "black",
+            lighten : {
+                '#FAFAFA'   : "lighten-5",
+                '#F5F5F5'   : "lighten-4",
+                '#EEEEEE'   : "lighten-3",
+                '#E0E0E0'   : "lighten-2",
+                '#BDBDBD'   : "lighten-1",
+            },
+            darken : {
+                '#757575'   : "darken-1",
+                '#616161'   : "darken-2",
+                '#424242'   : "darken-3",
+                '#212121'   : "darken-4",
+            }
+        },
+        blue_grey : {
+            '#607D8B'   : "blue_grey",
+            lighten : {
+                '#ECEFF1'   : "lighten-5",
+                '#CFD8DC'   : "lighten-4",
+                '#B0BEC5'   : "lighten-3",
+                '#90A4AE'   : "lighten-2",
+                '#78909C'   : "lighten-1",
+            },
+            darken : {
+                '#546E7A'   : "darken-1",
+                '#455A64'   : "darken-2",
+                '#37474F'   : "darken-3",
+                '#263238'   : "darken-4",
+            }
+        }
+    };
+         {#if navbarCheck == true}
+                        <MaterialApp>
+                            <AppBar>
+                                <div slot="icon">
+                                    <Button fab depressed>
+                                        <span class="material-icons">
+                                            menu
+                                            </span>
+                                    </Button>
+                                </div>
+                                <span slot="title">Top App bar</span>
+                                <div style="flex-grow:1" />
+                                <Menu right>
+                                    <div slot="activator">
+                                        <Button fab depressed>
+                                            <span class="material-icons"> more_vert</span>
+                                        </Button>
+                                    </div>
+                                    <ListItem>Item 1</ListItem>
+                                    <ListItem>Item 2</ListItem>
+                                    <ListItem>Item 3</ListItem>
+                                </Menu>
+                            </AppBar>
+                        </MaterialApp>  
+                        {/if}
+                      
+                        <Anchor children={treeWidget} on:GetIDAndNameItem={handleGetIDNameItem}   on:dropItem={handleDROP} on:dispatchIsPromo={handleIsPromo} bind:MainAxesAlignment={Column_MainAxesAlignment} {UniqueId} on:test={del}/>
+                        {#if navBotbarCheck == true}
+                        <div class="bottom">
+                            <AppBar {collapsed} class="primary-color theme--dark bottom" >
+                                <div slot="icon">
+                                    <Button depressed fab text>
+                                    </Button>
+                                </div>
+                                <span slot="title">Bottom App bar</span>
+                                <div style="flex-grow:1" />
+                                <Checkbox bind:checked={collapsed} />
+                            </AppBar>
+                        </div>
+                        {/if}
