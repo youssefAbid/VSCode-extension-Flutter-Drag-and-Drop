@@ -1,3 +1,5 @@
+![vcscode](https://user-images.githubusercontent.com/46957462/128512418-af5ab949-79ba-4f25-bcd1-f31287e47873.PNG)
+![vscode](https://user-images.githubusercontent.com/46957462/128512420-4e8e87cf-0522-4f4d-8e97-7cfc9932d70a.PNG)
 # easymake README
 
 This is the README for your extension "easymake". After writing up a brief description, we recommend including the following sections.
